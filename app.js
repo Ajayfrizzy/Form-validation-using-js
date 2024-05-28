@@ -66,7 +66,7 @@ form.addEventListener('submit', (e) => {
 
   if (passwordVal === '') {
     password.classList.add('error');
-    errorTextPass.innerHTML = "Password correct be empty";
+    errorTextPass.innerHTML = "Password cannot be empty";
     revealPassword.src = "./images/exclamation-circle-solid.svg";
 
   } else {
