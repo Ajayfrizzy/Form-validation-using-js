@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
   console.log(fName, lName, emailVal, passwordVal);
 
   // Check first name
-  if (fName === '') {
+  if (fName === ''){
     firstName.classList.add('error');
     errorTextFirst.innerHTML = "First Name cannot be empty";
     firstWarning.style.display = "block";
@@ -35,7 +35,7 @@ form.addEventListener('submit', (e) => {
   } else {
     firstName.classList.remove('error');
     errorTextFirst.innerHTML = '';
-    firstWarning.style.display = "none"
+    firstWarning.style.display = "none";
   }
   // Check last name
 
@@ -67,7 +67,7 @@ form.addEventListener('submit', (e) => {
   if (passwordVal === '') {
     password.classList.add('error');
     errorTextPass.innerHTML = "Password cannot be empty";
-    revealPassword.src = "./images/exclamation-circle-solid.svg";
+    revealPassword.src = "./images/circle-exclamation-solid.svg";
 
   } else {
     password.classList.remove('error');
@@ -82,16 +82,20 @@ function validateEmail(email) {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 }
+/*
+function correctType(fNames){
+  var correct = /^[A-Za-z]+$/;
+  return correct.test(fNames).textContent = '';
+}*/
 
-
-
+/* Revealing the password with the eye icon */
 revealPassword.addEventListener('click', () =>{
   if(password.type === 'password'){
     password.type = 'text';
-    revealPassword.src = "./images/eye-solid.svg";
+    revealPassword.src = "./images/eye-solid.png";
   }else{
     password.type = 'password';
-    revealPassword.src = "./images/eye-slash-solid.svg";
+    revealPassword.src = "./images/eye-slash-solid.png";
   }
 })
 

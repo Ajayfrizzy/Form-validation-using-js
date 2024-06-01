@@ -81,8 +81,8 @@ label {
 .warning-icon img {
   position: absolute;
   right: 1rem;
-  bottom: 3rem;
   width: 6%;
+  margin: 0.9rem auto;
 }
 
 div.d-fl {
@@ -95,7 +95,7 @@ div.d-fl {
 .error-text-pass {
   font-size: 0.8rem;
   font-weight: 500;
-  color: rgb(255, 0, 0);
+  color: rgb(241, 86, 86);
   position: absolute;
   top: 3.5rem;
   right: 0.3rem;
@@ -129,7 +129,7 @@ button {
   display: block;
   width: 100%;
   padding: 1rem 0;
-  background-color: var(--green);
+  background-color: hsl(154, 95%, 32%);
   color: white;
   border: none;
   border-radius: 1rem;
@@ -138,6 +138,10 @@ button {
   text-transform: uppercase;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+
+button:hover{
+  background-color: hsl(154, 59%, 51%);;
 }
 
 #first-warning,
@@ -164,13 +168,29 @@ small span {
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 600px), (max-width: 999.99px) {
+@media screen and (max-width: 999.99px){
   .container {
+    max-width: 100vw;
+    width: 80%;
     flex-direction: column;
+    height: 100%;
+}
+.container-text {
+  text-align: center;
+  padding-top: 3rem;
+}
+.warning-icon img {
+  margin: 1rem auto;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
     height: 90%;
     max-width: 90vw;
-  }
+    flex-direction: column;
+}
   .container-text {
     text-align: center;
     width: 100%;
@@ -189,4 +209,25 @@ small span {
     display: block;
     text-align: center;
   }
+  .warning-icon img {
+    margin: 4% auto;
 }
+}
+
+@media screen and (max-width: 500px) {
+  .warning-icon img {
+    margin: 1.18rem auto;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .warning-icon img {
+    margin: 1.25rem auto;
+}
+}
+
+@media screen and (max-width: 300px), (max-width: 400px){
+  .warning-icon img {
+    margin: 1.4rem auto;
+}
+} 
