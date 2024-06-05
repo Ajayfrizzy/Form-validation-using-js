@@ -81,8 +81,11 @@ label {
 .warning-icon img {
   position: absolute;
   right: 1rem;
+  margin: 1.04rem auto;
+}
+
+#reveal-password{
   width: 6%;
-  margin: 0.9rem auto;
 }
 
 div.d-fl {
@@ -180,7 +183,7 @@ small span {
   padding-top: 3rem;
 }
 .warning-icon img {
-  margin: 1rem auto;
+  margin: 1.1rem auto;
 }
 }
 
@@ -210,24 +213,24 @@ small span {
     text-align: center;
   }
   .warning-icon img {
-    margin: 4% auto;
+    margin: 1.05rem auto;
 }
 }
 
 @media screen and (max-width: 500px) {
   .warning-icon img {
-    margin: 1.18rem auto;
+    margin: 1.1rem auto;
 }
 }
 
 @media screen and (max-width: 450px) {
   .warning-icon img {
-    margin: 1.25rem auto;
+    margin: 1.05rem auto;
 }
 }
 
 @media screen and (max-width: 300px), (max-width: 400px){
   .warning-icon img {
-    margin: 1.4rem auto;
+    margin: 1.1rem auto;
 }
 } 
